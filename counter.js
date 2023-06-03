@@ -80,21 +80,3 @@ function recordToCounter(arr, counter) {
 // sameFrequency('abbc', 'aabc');
 // sameFrequency('abba', 'abab');
 // sameFrequency('aasdebasdf', 'adfeebed');
-
-function averagePair(arr, num) {
-  let doubledNum = num * 2;
-  let result = [];
-
-  for (let i = 0; i <= arr.length; i++) {
-    let target = doubledNum - arr[i];
-
-    if (arr.includes(target)) {
-      result.push(arr[i], target);
-      arr = arr.filter((num) => num !== target); // filter the target to avoid duplicated search
-    }
-  }
-
-  return result;
-}
-
-console.log('averagePair', averagePair([-11, 0, 1, 2, 3, 9, 14, 17, 21], 1.5));
