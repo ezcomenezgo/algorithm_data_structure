@@ -73,4 +73,22 @@ function pointer2(arr, num) {
   return result;
 }
 
-console.log('averagePair', pointer2([-11, 0, 1, 2, 3, 9, 14, 17, 21], 1.5));
+// console.log('averagePair', pointer2([-11, 0, 1, 2, 3, 9, 14, 17, 21], 1.5));
+
+function isPalindrome(str) {
+  let min = 0;
+  let max = str.length - 1;
+
+  while (min < max) {
+    if (str[min] !== str[max]) {
+      return false;
+    } else if (str[min] === str[max]) {
+      min++;
+      max--;
+    }
+  }
+
+  return true;
+}
+
+console.log('isPalindrome', isPalindrome('amanaplanacanalpanama'));
