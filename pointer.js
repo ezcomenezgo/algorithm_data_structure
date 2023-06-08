@@ -1,3 +1,11 @@
+/**
+ * Write a function that given a sorted array of integers and a number.
+ * Find if there’s any pair in the array that has average of the given number.
+ * Find all of them. There might be multiple pairs fit the condition.
+ * @param {*} arr
+ * @param {*} num
+ * @returns
+ */
 function averagePair(arr, num) {
   let doubledNum = num * 2;
   let result = [];
@@ -75,6 +83,12 @@ function pointer2(arr, num) {
 
 // console.log('averagePair', pointer2([-11, 0, 1, 2, 3, 9, 14, 17, 21], 1.5));
 
+/**
+ * Write a function that checks if the input is a palindrome.
+ * Palindrome is a word that can be read forwards and backwards.
+ * @param {*} str
+ * @returns
+ */
 function isPalindrome(str) {
   let min = 0;
   let max = str.length - 1;
@@ -93,6 +107,15 @@ function isPalindrome(str) {
 
 console.log('isPalindrome', isPalindrome('amanaplanacanalpanama'));
 
+/**
+ * A subsequence of a string is a new string
+ * that is formed from the original string
+ * by deleting some (can be none) of the characters
+ * without disturbing the relative positions of the remaining characters.
+ * @param {*} newStr
+ * @param {*} originStr
+ * @returns
+ */
 function isSubsequence(newStr, originStr) {
   if (newStr.length === 0) return true;
 

@@ -1,3 +1,11 @@
+/**
+ * Write a function that takes two arrays as parameters,
+ * and then return an array that is the intersection of these two arrays.
+ * For example, Intersection ([1, 2, 3], [5, 16, 1, 3]) should return [1, 3]
+ * @param {*} shortArr
+ * @param {*} longArr
+ * @returns
+ */
 function intersection1(shortArr, longArr) {
   let insertArr = [];
 
@@ -48,6 +56,13 @@ function intersection2(arr1, arr2) {
 
 // intersection2([3, 6, 8, 15, 16, 24], [3, 6, 8, 9, 11, 15]);
 
+/**
+ * Write a function that takes two strings and check if they have the same letters.
+ * Order doesn’t matter.
+ * @param {*} str1
+ * @param {*} str2
+ * @returns
+ */
 function sameFrequency(str1, str2) {
   if (str1.length !== str2.length) return console.log('false');
 
